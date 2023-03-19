@@ -1,0 +1,18 @@
+{
+    "name": "olgakolesnikova/php-test",
+    "autoload": {
+        "psr-4": {
+            "Olgakolesnikova\\PhpTest\\": "src/"
+        },
+        "files": [
+            "src/StringUtils.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Aleksei Kolesnikov",
+            "email": "kolalexx@yandex.ru"
+        }
+    ],
+    "require": {}
+}
