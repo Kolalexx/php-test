@@ -12,13 +12,8 @@ if (file_exists($autoloadPath1)) {
 
 use function src\StringUtils\capitalize;
 
+use Webmozart\Assert\Assert;
 
-if (capitalize('hello') !== 'Hello') {
-    throw new \Exception('Функция работает неверно!');
-}
+Assert::eq(capitalize(''), '');
 
-if (capitalize('') !== '') {
-    throw new \Exception('Функция работает неверно!');
-}
-
-echo 'Все тесты пройдены!';
+Assert::eq(capitalize('hello'), 'Hello');
